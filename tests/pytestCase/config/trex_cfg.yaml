@@ -1,0 +1,23 @@
+- port_limit      : 2
+  version         : 4
+#List of interfaces. Change to suit your setup. Use ./dpdk_setup_ports.py -s to see available options
+  low_end       : true
+  interfaces    : ["ens4","ens5"]
+  port_info       :  # Port IPs. Change to suit your needs. In case of loopback, you can leave as is.
+          - dest_mac   : '52:54:00:40:e9:24'
+            ip         : 1.2.3.3
+            default_gw : 1.2.3.1
+          - dest_mac   : '52:54:00:fc:ce:10'
+            ip         : 1.2.4.3
+            default_gw : 1.2.4.1
+          - dest_mac   : '52:54:00:93:23:77'
+            ip         : 5.5.5.5
+            default_gw : 5.5.5.1
+          - dest_mac   : '52:54:00:bf:c1:df'
+            ip         : 6.6.6.6
+            default_gw : 6.6.6.1
+          - ip         : 187.11.149.100
+            default_gw : 187.11.149.1
+          - ip         : 111.14.127.101
+            default_gw : 111.14.127.1
+
